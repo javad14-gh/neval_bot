@@ -4,12 +4,9 @@ from bs4 import BeautifulSoup
 import requests
 import json
 
-
-
-
 headers = {'User-Agent': 'Opera/9.80 (Macintosh; Intel Mac OS X; U; en) Presto/2.2.15 Version/10.00 Opera/9.60 (Windows NT 6.0; U; en) Presto/2.1.1'}
 token = '5921068963:AAH1KQkVg0YyajEq4c5dBRSPhfXfM3cpZpo'
-menu = [['/matn','/getPic'],['/nerkh','/gheymat_lir'],['/send_message_channel']]
+menu = [['/text','/getPic'],['/nerkh','/gheymat_lir'],['/send_message_channel']]
 markup_menu = ReplyKeyboardMarkup(menu,one_time_keyboard=True)
 markup_edame = ReplyKeyboardMarkup([['/YES','/NO']],one_time_keyboard=True)
 menuKey , getpickey , matnKey , resume , calculate , lir = range(6)
